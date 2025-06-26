@@ -1,0 +1,30 @@
+oot firmware version 20170308-2
+!*:#)$<@[|{%\B6:\'V8L,=2OVWOXL5D-);!/
+Boot firmware exiting normally
+
+
+U-Boot 2015.01 (Jun 26 2025 - 09:40:53) - stm24-2017-02-22
+
+
+
+Board: B2232-revx-STxD337 [ARM] 
+I2C:   ready
+DRAM:    1 GiB
+MMC:   boot:eMMC: 8xbit - div2
+stm-sdhci0: 0, stm-sdhci1: 1
+Card did not respond to voltage select!
+MMC init failed
+Using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   
+*** ERROR: ethaddr is NOT set !!
+st_mac4-1
+Error: st_mac4-1 address not set.
+
+B2232> mmc list
+stm-sdhci0: 0
+stm-sdhci1: 1
+B2232>
