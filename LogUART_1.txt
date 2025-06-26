@@ -1,0 +1,728 @@
+Boot firmware version 20170308-2
+!*:#)$<@[|{%\B6:\'V8L,=2OVWOXL5D-);!/
+Boot firmware exiting normally
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.92-stih337_family (user@user-VirtualBox) (gcc version 4.9.3 (crosstool-NG ) ) #2 SMP PREEMPT Thu Nov 7 14:54:12 MSK 2024
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: STi SoC with Flattened Device Tree, model: STiH337 B2232
+[    0.000000] Ignoring memory below PHYS_OFFSET: 0x80000000-0x82000000
+[    0.000000] Reserved memory: reserved region for node 'gp0-reserved': base 0x81400000, size 4 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp1-reserved': base 0x80c00000, size 4 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp2-reserved': base 0x80200000, size 4 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp3-reserved': base 0x80700000, size 4 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp0_vring': base 0x81800000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp0_buffer': base 0x81808000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp1_vring': base 0x81000000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp1_buffer': base 0x81008000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp2_vring': base 0x80600000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp2_buffer': base 0x80608000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp3_vring': base 0x80b00000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'gp3_buffer': base 0x80b08000, size 0 MiB
+[    0.000000] Reserved memory: created DMA memory pool at 0x81400000, size 4 MiB
+[    0.000000] Reserved memory: initialized node gp0-reserved, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80c00000, size 4 MiB
+[    0.000000] Reserved memory: initialized node gp1-reserved, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80200000, size 4 MiB
+[    0.000000] Reserved memory: initialized node gp2-reserved, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80700000, size 4 MiB
+[    0.000000] Reserved memory: initialized node gp3-reserved, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x81800000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp0_vring, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x81808000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp0_buffer, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x81000000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp1_vring, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x81008000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp1_buffer, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80600000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp2_vring, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80608000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp2_buffer, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80b00000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp3_vring, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created DMA memory pool at 0x80b08000, size 0 MiB
+[    0.000000] Reserved memory: initialized node gp3_buffer, compatible id shared-dma-pool
+[    0.000000] cma: CMA: reserved 16 MiB at bf000000
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] PERCPU: Embedded 8 pages/cpu @82948000 s11904 r8192 d12672 u32768
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 251968
+[    0.000000] Kernel command line: lpj=1994752 console=ttyAS0,115200 earlyprintk
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] allocated 2031616 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 992MB = 992MB total
+[    0.000000] Memory: 954788k/954788k available, 61020k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xbe800000 - 0xff000000   (1032 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xbe000000   ( 992 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x8090e1b4   (9241 kB)
+[    0.000000]       .init : 0x8090f000 - 0x81f88e80   (23016 kB)
+[    0.000000]       .data : 0x81f8a000 - 0x81ffb548   ( 454 kB)
+[    0.000000]        .bss : 0x81ffb548 - 0x820c06ac   ( 789 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Kernel running in Secure world.
+[    0.000000] L310 cache controller enabled
+[    0.000000] l2x0: 8 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x30460000, Cache size: 524288 B
+[    0.000000] st-lpc: lpc_clk running @ 100000033 Hz
+[    0.000000] sched_clock: 32 bits at 100MHz, resolution 9ns, wraps every 42949ms
+[    0.000000] st-lpc: clocksource initialised: iomem: be840000
+[    0.000000] Console: colour dummy device 80x30
+[    0.000118] Calibrating delay loop (skipped) preset value.. 398.95 BogoMIPS (lpj=1994752)
+[    0.000130] pid_max: default: 32768 minimum: 301
+[    0.000270] Mount-cache hash table entries: 512
+[    0.019264] Initializing cgroup subsys memory
+[    0.019309] Initializing cgroup subsys devices
+[    0.019319] Initializing cgroup subsys freezer
+[    0.019383] CPU: Testing write buffer coherency: ok
+[    0.019423] ftrace: allocating 23948 entries in 71 pages
+[    0.053238] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.054045] Setting up static identity map for 0x80681820 - 0x80681878
+[    0.110490] CPU1: Booted secondary processor
+[    0.110526] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.110608] Brought up 2 CPUs
+[    0.110623] SMP: Total of 2 processors activated (797.90 BogoMIPS).
+[    0.110629] CPU: All CPU(s) started in SVC mode.
+[    0.111201] devtmpfs: initialized
+[    0.116430] pinctrl core: initialized pinctrl subsystem
+[    0.116665] regulator-dummy: no parameters
+[    0.117726] NET: Registered protocol family 16
+[    0.119610] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.121951] syscon 9000000.fc0-backbone-syscfg: regmap [mem 0x09000000-0x09132007] registered
+[    0.122107] syscon b000000.fc1-vsafe-syscfg: regmap [mem 0x0b000000-0x0b140003] registered
+[    0.122250] syscon f000000.fc3-gp3-syscfg: regmap [mem 0x0f000000-0x0f130007] registered
+[    0.122375] syscon 15000000.fc6-display-syscfg: regmap [mem 0x15000000-0x15130013] registered
+[    0.122516] syscon 17000000.fc7-hsif-syscfg: regmap [mem 0x17000000-0x17138013] registered
+[    0.122666] syscon 1b000000.fc9-st231ss-syscfg: regmap [mem 0x1b000000-0x1b130047] registered
+[    0.122810] syscon 1f000000.fc11-bootdev-syscfg: regmap [mem 0x1f000000-0x1f13013b] registered
+[    0.122944] syscon 23000000.fc13-ts-syscfg: regmap [mem 0x23000000-0x23140003] registered
+[    0.123082] syscon 27000000.fc15-a9-syscfg: regmap [mem 0x27000000-0x27138007] registered
+[    0.123206] syscon 261f0000.a9-syscfg: regmap [mem 0x261f0000-0x261f0093] registered
+[    0.123350] syscon a1f0000.lpm-syscfg: regmap [mem 0x0a1f0000-0x0a1f0077] registered
+[    0.123471] syscon 8320000.pio-rear0-syscfg: regmap [mem 0x08320000-0x083201c7] registered
+[    0.123599] syscon a600000.pio-vsafe-syscfg: regmap [mem 0x0a600000-0x0a6001d7] registered
+[    0.123733] syscon 1e400000.pio-flash-syscfg: regmap [mem 0x1e400000-0x1e40015b] registered
+[    0.126312] syscon a1f0000.stm-lpmwkp: regmap [mem 0x0a1f0000-0x0a1fffff] registered
+[    0.129459] sti-mailbox 8100000.mailbox: no reset control found
+[    0.129539] sti-mailbox 8100000.mailbox: Mbox (0) a9: 1 channel registered
+[    0.129720] platform e600000.mailbox: Driver sti-mailbox requests probe deferral
+[    0.129842] sti-mailbox 1a500000.mailbox: no reset control found
+[    0.129880] sti-mailbox 1a500000.mailbox: Mbox (2) st231_gp_2: 2 channel registered
+[    0.130051] sti-mailbox 1a600000.mailbox: no reset control found
+[    0.130091] sti-mailbox 1a600000.mailbox: Mbox (3) st231_gp_0: 2 channel registered
+[    0.130215] sti-mailbox 1a700000.mailbox: no reset control found
+[    0.130245] sti-mailbox 1a700000.mailbox: Mbox (4) st231_gp_1: 2 channel registered
+[    0.130682] syscon d000000.fc2-demod-syscfg: regmap [mem 0x0d000000-0x0d142003] registered
+[    0.130820] syscon 8300000.pio-front-syscfg: regmap [mem 0x08300000-0x08300307] registered
+[    0.131240] syscon 1d000000.fc10-gpu-syscfg: regmap [mem 0x1d000000-0x1d000003] registered
+[    0.132911] syscon d140000.stid337-syscfg: regmap [mem 0x0d140000-0x0d141003] registered
+[    0.134085] syscon 22a40000.nvs_10_public_port: regmap [mem 0x22a40000-0x22a41fff] registered
+[    0.134237] syscon 22a42000.nvs_10_public_port: regmap [mem 0x22a42000-0x22a42fff] registered
+[    0.135936] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+[    0.135946] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.136391] sti-pd-gate usb3_hsif.10: registered (TP-status:0)
+[    0.136447] sti-pd-gate usb2_hsif.11: registered (TP-status:0)
+[    0.136488] sti-pd-gate gmac_hsif.12: registered (TP-status:0)
+[    0.136530] sti-pd-gate c8st231_gp3.14: registered (TP-status:0)
+[    0.136568] sti-pd-gate c8hadst231_gp3.15: registered (TP-status:0)
+[    0.136604] sti-pd-gate rstst231_gp3.16: registered (TP-status:0)
+[    0.136640] sti-pd-gate mbxst231_gp3.17: registered (TP-status:0)
+[    0.136680] sti-pd-gate sdemmc0_bootdev.18: registered (TP-status:0)
+[    0.136719] sti-pd-gate nandpwrdn_bootdev.19: registered (TP-status:1)
+[    0.136772] sti-pd-gate nand_bootdev.20: registered (TP-status:1)
+[    0.136811] sti-pd-gate spi_bootdev.21: registered (TP-status:1)
+[    0.136849] sti-pd-gate emmc_bootdev.22: registered (TP-status:1)
+[    0.136893] sti-pd-gate stfe_ts.24: registered (TP-status:0)
+[    0.136931] sti-pd-gate stbe_ts.25: registered (TP-status:0)
+[    0.136975] sti-pd-gate gp0_st231ss.27: registered (TP-status:0)
+[    0.137013] sti-pd-gate gp1_st231ss.28: registered (TP-status:0)
+[    0.137054] sti-pd-gate fdma0_display.30: registered (TP-status:0)
+[    0.137097] sti-pd-gate fdma1_display.31: registered (TP-status:0)
+[    0.137149] sti-pd-gate uplayer1_display.32: registered (TP-status:0)
+[    0.137187] sti-pd-gate uplayer2_display.33: registered (TP-status:0)
+[    0.137227] sti-pd-gate nic301_armcores.34: registered (TP-status:0)
+[    0.137267] sti-pd-gate debug_armcores.35: registered (TP-status:0)
+[    0.137306] sti-pd-gate atb_armcores.36: registered (TP-status:0)
+[    0.137345] sti-pd-gate trace_armcores.37: registered (TP-status:0)
+[    0.137383] sti-pd-gate stbus2axi_armcores.38: registered (TP-status:1)
+[    0.137445] sti-pd-gate dvbs2_demod.40: registered (TP-status:0)
+[    0.137492] sti-pd-gate fsk_demod.41: registered (TP-status:0)
+[    0.137549] sti-pd-gate adc_diseqc_demod.42: registered (TP-status:0)
+[    0.137598] sti-pd-gate pcie0_hsif.46: registered (TP-status:0)
+[    0.137648] sti-pd-gate mali_gpu.47: registered (TP-status:0)
+[    0.137692] sti-pd-gate iqdp_display.50: registered (TP-status:0)
+[    0.137730] sti-pd-gate iqout_display.51: registered (TP-status:0)
+[    0.138115] sti-pd-grp hsif_fc.13: registered
+[    0.138222] sti-pd-grp bootdev_fc.23: registered
+[    0.138304] sti-pd-grp ts_fc.26: registered
+[    0.138373] sti-pd-grp st231ss_fc.29: registered
+[    0.138518] sti-pd-grp armcores_fc.39: registered
+[    0.138607] sti-pd-grp demod_fc.43: registered
+[    0.138715] sti-pd-grp vdec_fc.44: registered
+[    0.138891] sti-pd-grp display_fc.45: registered
+[    0.138948] sti-pd-grp gpu_fc.48: registered
+[    0.139176] sti-pd-grp fcgate_grp.49: registered
+[    0.139395] st-pinctrl pin-controller-vsafe.1: nbanks = 3
+[    0.139404] st-pinctrl pin-controller-vsafe.1: nfunctions = 12
+[    0.139412] st-pinctrl pin-controller-vsafe.1: ngroups = 17
+[    0.139569] st-pinctrl pin-controller-vsafe.1: PIO0 bank added.
+[    0.139733] st-pinctrl pin-controller-vsafe.1: PIO1 bank added.
+[    0.139888] st-pinctrl pin-controller-vsafe.1: PIO2 bank added.
+[    0.140043] st-pinctrl pin-controller-vsafe.1: Function[0	 name:serial10,groups:2]
+[    0.140059] st-pinctrl pin-controller-vsafe.1: Function[1	 name:serial11,groups:1]
+[    0.140076] st-pinctrl pin-controller-vsafe.1: Function[2	 name:rc,	groups:2]
+[    0.140090] st-pinctrl pin-controller-vsafe.1: Function[3	 name:i2c10,	groups:1]
+[    0.140104] st-pinctrl pin-controller-vsafe.1: Function[4	 name:i2c11,	groups:1]
+[    0.140117] st-pinctrl pin-controller-vsafe.1: Function[5	 name:i2c12,	groups:1]
+[    0.140136] st-pinctrl pin-controller-vsafe.1: Function[6	 name:spi10,	groups:2]
+[    0.140156] st-pinctrl pin-controller-vsafe.1: Function[7	 name:spi11,	groups:2]
+[    0.140169] st-pinctrl pin-controller-vsafe.1: Function[8	 name:spi12,	groups:1]
+[    0.140185] st-pinctrl pin-controller-vsafe.1: Function[9	 name:usb2_1_1,groups:2]
+[    0.140197] st-pinctrl pin-controller-vsafe.1: Function[10	 name:usb3_0_1,groups:1]
+[    0.140215] st-pinctrl pin-controller-vsafe.1: Function[11	 name:systrace,groups:1]
+[    0.140376] st-pinctrl pin-controller-front1.2: nbanks = 10
+[    0.140385] st-pinctrl pin-controller-front1.2: nfunctions = 20
+[    0.140392] st-pinctrl pin-controller-front1.2: ngroups = 30
+[    0.140557] st-pinctrl pin-controller-front1.2: PIO10 bank added.
+[    0.140726] st-pinctrl pin-controller-front1.2: PIO11 bank added.
+[    0.140894] st-pinctrl pin-controller-front1.2: PIO12 bank added.
+[    0.141043] st-pinctrl pin-controller-front1.2: PIO13 bank added.
+[    0.141201] st-pinctrl pin-controller-front1.2: PIO14 bank added.
+[    0.141364] st-pinctrl pin-controller-front1.2: PIO15 bank added.
+[    0.141529] st-pinctrl pin-controller-front1.2: PIO16 bank added.
+[    0.141685] st-pinctrl pin-controller-front1.2: PIO17 bank added.
+[    0.141845] st-pinctrl pin-controller-front1.2: PIO18 bank added.
+[    0.142004] st-pinctrl pin-controller-front1.2: PIO19 bank added.
+[    0.142118] st-pinctrl pin-controller-front1.2: Function[0	 name:i2c0,	groups:1]
+[    0.142134] st-pinctrl pin-controller-front1.2: Function[1	 name:i2c1,	groups:1]
+[    0.142151] st-pinctrl pin-controller-front1.2: Function[2	 name:i2c2,	groups:1]
+[    0.142165] st-pinctrl pin-controller-front1.2: Function[3	 name:i2c3,	groups:1]
+[    0.142186] st-pinctrl pin-controller-front1.2: Function[4	 name:spi0,	groups:2]
+[    0.142207] st-pinctrl pin-controller-front1.2: Function[5	 name:spi1,	groups:2]
+[    0.142228] st-pinctrl pin-controller-front1.2: Function[6	 name:spi2,	groups:2]
+[    0.142259] st-pinctrl pin-controller-front1.2: Function[7	 name:spi3,	groups:2]
+[    0.142273] st-pinctrl pin-controller-front1.2: Function[8	 name:serial0,	groups:1]
+[    0.142287] st-pinctrl pin-controller-front1.2: Function[9	 name:serial1,	groups:1]
+[    0.142301] st-pinctrl pin-controller-front1.2: Function[10	 name:serial2,	groups:1]
+[    0.142347] st-pinctrl pin-controller-front1.2: Function[11	 name:synp_gmac,groups:3]
+[    0.142367] st-pinctrl pin-controller-front1.2: Function[12	 name:pwm1,	groups:4]
+[    0.142385] st-pinctrl pin-controller-front1.2: Function[13	 name:tsin0,	groups:1]
+[    0.142403] st-pinctrl pin-controller-front1.2: Function[14	 name:tsin1,	groups:1]
+[    0.142422] st-pinctrl pin-controller-front1.2: Function[15	 name:tsout1,	groups:1]
+[    0.142462] st-pinctrl pin-controller-front1.2: Function[16	 name:tsin2,	groups:2]
+[    0.142479] st-pinctrl pin-controller-front1.2: Function[17	 name:tsin3,	groups:1]
+[    0.142510] st-pinctrl pin-controller-front1.2: Function[18	 name:tsout0,	groups:1]
+[    0.142539] st-pinctrl pin-controller-front1.2: Function[19	 name:mtsin0,	groups:1]
+[    0.142716] st-pinctrl pin-controller-front0.3: nbanks = 2
+[    0.142725] st-pinctrl pin-controller-front0.3: nfunctions = 3
+[    0.142732] st-pinctrl pin-controller-front0.3: ngroups = 4
+[    0.142903] st-pinctrl pin-controller-front0.3: PIO20 bank added.
+[    0.143079] st-pinctrl pin-controller-front0.3: PIO21 bank added.
+[    0.143219] st-pinctrl pin-controller-front0.3: Function[0	 name:mmc1,	groups:1]
+[    0.143238] st-pinctrl pin-controller-front0.3: Function[1	 name:i2c4,	groups:1]
+[    0.143264] st-pinctrl pin-controller-front0.3: Function[2	 name:spi4,	groups:2]
+[    0.143400] st-pinctrl pin-controller-rear0.4: nbanks = 2
+[    0.143408] st-pinctrl pin-controller-rear0.4: nfunctions = 12
+[    0.143415] st-pinctrl pin-controller-rear0.4: ngroups = 18
+[    0.143538] st-pinctrl pin-controller-rear0.4: PIO30 bank added.
+[    0.143717] st-pinctrl pin-controller-rear0.4: PIO31 bank added.
+[    0.143848] st-pinctrl pin-controller-rear0.4: Function[0	 name:pwm0,	groups:4]
+[    0.143866] st-pinctrl pin-controller-rear0.4: Function[1	 name:i2c5,	groups:1]
+[    0.143883] st-pinctrl pin-controller-rear0.4: Function[2	 name:i2c6,	groups:1]
+[    0.143908] st-pinctrl pin-controller-rear0.4: Function[3	 name:spi5,	groups:2]
+[    0.143944] st-pinctrl pin-controller-rear0.4: Function[4	 name:spi6,	groups:2]
+[    0.143961] st-pinctrl pin-controller-rear0.4: Function[5	 name:eth0_led,groups:1]
+[    0.143977] st-pinctrl pin-controller-rear0.4: Function[6	 name:usb2_1,	groups:1]
+[    0.143993] st-pinctrl pin-controller-rear0.4: Function[7	 name:usb3_0,	groups:1]
+[    0.144009] st-pinctrl pin-controller-rear0.4: Function[8	 name:serial3,	groups:1]
+[    0.144048] st-pinctrl pin-controller-rear0.4: Function[9	 name:i2s_out,	groups:2]
+[    0.144067] st-pinctrl pin-controller-rear0.4: Function[10	 name:i2s_in,	groups:1]
+[    0.144081] st-pinctrl pin-controller-rear0.4: Function[11	 name:spdif_out,groups:1]
+[    0.144187] st-pinctrl pin-controller-flash.5: nbanks = 3
+[    0.144195] st-pinctrl pin-controller-flash.5: nfunctions = 3
+[    0.144202] st-pinctrl pin-controller-flash.5: ngroups = 4
+[    0.144338] st-pinctrl pin-controller-flash.5: PIO40 bank added.
+[    0.144497] st-pinctrl pin-controller-flash.5: PIO41 bank added.
+[    0.144661] st-pinctrl pin-controller-flash.5: PIO42 bank added.
+[    0.144840] st-pinctrl pin-controller-flash.5: Function[0	 name:mmc0,	groups:2]
+[    0.144872] st-pinctrl pin-controller-flash.5: Function[1	 name:sfc,	groups:1]
+[    0.144928] st-pinctrl pin-controller-flash.5: Function[2	 name:nand,	groups:1]
+[    0.151306] reset-stih337 softreset-controller.7: registered
+[    0.160390] st-clk clocks.88: SoC clock tree intialized
+[    0.165284] bio: create slab <bio-0> at 0
+[    0.166447] vgaarb: loaded
+[    0.166683] SCSI subsystem initialized
+[    0.166878] usbcore: registered new interface driver usbfs
+[    0.166915] usbcore: registered new interface driver hub
+[    0.167013] usbcore: registered new device driver usb
+[    0.167094] pps_core: LinuxPPS API ver. 1 registered
+[    0.167101] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.167115] PTP clock support registered
+[    0.167423] st-socinfo socinfo.6: No syscfg-socinfo phandle specified
+[    0.168236] Advanced Linux Sound Architecture Driver Initialized.
+[    0.169205] Switching to clocksource st-lpc clocksource
+[    0.185200] NET: Registered protocol family 2
+[    0.185791] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.185882] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.185965] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.186045] TCP: reno registered
+[    0.186062] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.186125] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.186368] NET: Registered protocol family 1
+[    0.186725] RPC: Registered named UNIX socket transport module.
+[    0.186734] RPC: Registered udp transport module.
+[    0.186739] RPC: Registered tcp transport module.
+[    0.186743] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.308876] sti pm: Copying poke table & poke loop to buffer
+[    0.308893] sti pm: entering prepare:CONTROLLER PASSIVE STANDBY
+[    0.308939] sti pm: support mode: CONTROLLER PASSIVE STANDBY
+[    0.308944] sti pm: Suspend and PowerDown support registered
+[    0.366349] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.367294] NTFS driver 2.1.30 [Flags: R/O].
+[    0.367495] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.367852] fuse init (API version 7.22)
+[    0.368195] msgmni has been set to 1896
+[    0.369502] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.369514] io scheduler noop registered
+[    0.369520] io scheduler deadline registered
+[    0.369541] io scheduler cfq registered (default)
+[    0.369744] ibi_stbus 2200ffb0.ibi_stfe: No clock defined
+[    0.369764] ibi_stbus 2200ffb0.ibi_stfe: IP Bus Interface registered
+[    0.369998] ibi_stbus 140e1000.ibi_iqdp_rd: IP Bus Interface registered
+[    0.370131] ibi_stbus 140e3000.ibi_iqdp_wr: IP Bus Interface registered
+[    0.370848] ibi_ipplug 22949000.ibi_ipplug_tp_rd: No clock defined
+[    0.370905] ibi_ipplug 22949000.ibi_ipplug_tp_rd: IP Bus Interface registered
+[    0.370944] ibi_ipplug 22948000.ibi_ipplug_tp_wr: No clock defined
+[    0.370996] ibi_ipplug 22948000.ibi_ipplug_tp_wr: IP Bus Interface registered
+[    0.371031] ibi_ipplug 22849000.ibi_ipplug_sc_rd: No clock defined
+[    0.371071] ibi_ipplug 22849000.ibi_ipplug_sc_rd: IP Bus Interface registered
+[    0.371106] ibi_ipplug 22848000.ibi_ipplug_sc_wr: No clock defined
+[    0.371146] ibi_ipplug 22848000.ibi_ipplug_sc_wr: IP Bus Interface registered
+[    0.371183] ibi_ipplug 1e301000.ibi_ipplug_nand_r: No clock defined
+[    0.371247] ibi_ipplug 1e301000.ibi_ipplug_nand_r: IP Bus Interface registered
+[    0.371284] ibi_ipplug 1e300800.ibi_ipplug_nand_w: No clock defined
+[    0.371325] ibi_ipplug 1e300800.ibi_ipplug_nand_w: IP Bus Interface registered
+[    0.371364] ibi_ipplug 1e303800.ibi_ipplug_sfc_r: No clock defined
+[    0.371402] ibi_ipplug 1e303800.ibi_ipplug_sfc_r: IP Bus Interface registered
+[    0.371434] ibi_ipplug 1e303000.ibi_ipplug_sfc_w: No clock defined
+[    0.371482] ibi_ipplug 1e303000.ibi_ipplug_sfc_w: IP Bus Interface registered
+[    0.371797] ibi_ahb2stbus 16203f00.ibi_usb2_0: No clock defined
+[    0.371814] ibi_ahb2stbus 16203f00.ibi_usb2_0: making read ahead same as threshold
+[    0.371824] ibi_ahb2stbus 16203f00.ibi_usb2_0: IP Bus Interface registered
+[    0.372676] miphy28lp-phy 16505000.miphy28lp: No res for sysconf SATA glue
+[    0.372685] miphy28lp-phy 16505000.miphy28lp: No res for sysconf SGMII glue
+[    0.376038] miphy28lp-phy 16505000.miphy28lp: oscillator ref clk @ 25 MHz
+[    0.376563] sti-usb2-xphy 16200084.usb2xphy: clk_32k_cusb is missing
+[    0.376576] sti-usb2-xphy 16200084.usb2xphy: USB2 XPHY OSC 25 MHz enabled
+[    0.376600] sti-usb2-xphy 16200084.usb2xphy: glue-logic addr 0xbe946084
+[    0.376700] sti-usb2-xphy 16200084.usb2xphy: probe exits fine
+[    0.376787] sti-usb2-xphy 16100048.usb2xphy: clk_32k_cusb is missing
+[    0.376798] sti-usb2-xphy 16100048.usb2xphy: USB2 XPHY OSC 25 MHz enabled
+[    0.376813] sti-usb2-xphy 16100048.usb2xphy: glue-logic addr 0xbe948048
+[    0.376891] sti-usb2-xphy 16100048.usb2xphy: probe exits fine
+[    0.377616] st-pinctrl pin-controller-front1.2: maps: function pwm1 group pwm11_alt1-0 num 2
+[    0.378337] pcie0_hsif: Power-on latency exceeded, new value 6430 ns
+[    0.378446] st-pcie 16500000.pcie: power reset control not defined
+[    0.380646] miphy28lp-phy 16505000.miphy28lp: miphy28lp_phy_init_pcie
+[    0.380659] miphy28lp-phy 16505000.miphy28lp: pcie-up mode, addr 0xbe942000
+[    0.380673] miphy28lp-phy 16505000.miphy28lp: Using OSC ref clock
+[    0.383905] miphy28lp-phy 16505000.miphy28lp: MiPHY28 release 0x282 found
+[    0.538692] st-pcie 16500000.pcie: PCI host bridge to bus 0000:00
+[    0.538705] pci_bus 0000:00: root bus resource [mem 0x40000000-0x4aa9ffff]
+[    0.538714] pci_bus 0000:00: root bus resource [mem 0x4aaa0000-0x5ffeffff pref]
+[    0.538723] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.539015] PCI: bus0: Fast back to back transfers disabled
+[    0.539025] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.559139] PCI: bus1: Fast back to back transfers enabled
+[    0.559191] pci 0000:00:00.0: BAR 0: assigned [mem 0x40000000-0x400fffff]
+[    0.559205] pci 0000:00:00.0: BAR 1: assigned [mem 0x40100000-0x4010ffff]
+[    0.559216] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.559238] st-pcie 16500000.pcie: PCIe map irq: 0000:00:00.00 slot 0, pin 1, irq: 214
+[    0.559269] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.559285] PCI: enabling device 0000:00:00.0 (0146 -> 0147)
+[    0.559306] st-pcie 16500000.pcie: Initialized
+[    0.562677] st-fdma 14600000.fdma0: fw rev:1.0 on SLIM 0.134413
+[    0.562738] st-fdma 14600000.fdma0: ST FDMA engine driver, irq:35 xbar(no, id:0)
+[    0.565133] st-fdma 14620000.fdma1: fw rev:1.0 on SLIM 0.134413
+[    0.565185] st-fdma 14620000.fdma1: ST FDMA engine driver, irq:37 xbar(no, id:0)
+[    0.575946] CPU_1V0_AVS: 780 <--> 1340 mV 
+[    0.576214] STMicroelectronics ASC driver initialized
+[    0.576398] st-pinctrl pin-controller-vsafe.1: maps: function serial10 group serial10_alt1-0 num 3
+[    0.576625] a1a0000.serial10: ttyAS0 at MMIO 0xa1a0000 (irq = 172) is a st-asc
+[    2.894477] console [ttyAS0] enabled
+[    2.898739] [drm] Initialized drm 1.1.0 20060810
+[    2.904101] st-pinctrl pin-controller-flash.5: maps: function sfc group sfc num 7
+[    2.911929] st-sfc-revc 1e302000.spisfc: stop latency exceeded, new value 690 ns
+[    2.919352] st-sfc-revc 1e302000.spisfc: start latency exceeded, new value 560 ns
+[    2.926832] st-sfc-revc 1e302000.spisfc: state save latency exceeded, new value 6610 ns
+[    2.934843] spi_bootdev: Power-off latency exceeded, new value 5510 ns
+[    2.941804] st-pinctrl pin-controller-flash.5: maps: function nand group nand num 16
+[    2.950665] ONFI param page 0 valid
+[    2.954142] ONFI flash detected
+[    2.957274] NAND device: Manufacturer ID: 0x2c, Chip ID: 0xd3 (Micron MT29F8G08ABACAH4), 1024MiB, page size: 4096, OOB size: 224
+[    2.968849] stm-nand-bch 6201000.nand-bch: Using ONFI Timing Mode 3
+[    2.978827] stm-nand-bch 6201000.nand-bch: failed to find BBTs: scan device for bad-block markers
+[    3.212000] stm-nand-bch 6201000.nand-bch: updating both BBT(s)
+[    3.218637] stm-nand-bch 6201000.nand-bch: wrote BBT [primary:1] at 0x00003ffc0000 [4095]
+[    3.227526] stm-nand-bch 6201000.nand-bch: wrote BBT [mirror:1] at 0x00003ff80000 [4094]
+[    3.235617] stm-nand-bch BBT:
+[    3.238603] 		No bad blocks listed in BBT
+[    3.243742] 2 ofpart partitions found on MTD device 6201000.nand-bch
+[    3.250106] Creating 2 MTD partitions on "6201000.nand-bch":
+[    3.255758] 0x000000000000-0x000000800000 : "NAND boot"
+[    3.261681] 0x000000800000-0x000040000000 : "NAND rootfs"
+[    3.267843] stm-nand-bch 6201000.nand-bch: stop latency exceeded, new value 880 ns
+[    3.276559] libphy: Fixed MDIO Bus: probed
+[    3.281378] st-pinctrl pin-controller-rear0.4: maps: function eth0_led group eth0_led_alt1-0 num 3
+[    3.290358] stm-nand-bch 6201000.nand-bch: start latency exceeded, new value 570 ns
+[    3.298016] stm-nand-bch 6201000.nand-bch: state save latency exceeded, new value 10790 ns
+[    3.306498] stmmac_pltfr_probe: main dt probe failed
+[    3.311346] platform 16900000.dwmac: Driver stmmaceth requests probe deferral
+[    3.319277] stm-nand-bch 6201000.nand-bch: stop latency exceeded, new value 1160 ns
+[    3.326931] nand_bootdev: Power-off latency exceeded, new value 7070 ns
+[    3.333910] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    3.341387] usbcore: registered new interface driver pegasus
+[    3.347066] usbcore: registered new interface driver asix
+[    3.352492] usbcore: registered new interface driver ax88179_178a
+[    3.358594] usbcore: registered new interface driver cdc_ether
+[    3.364452] usbcore: registered new interface driver net1080
+[    3.370143] usbcore: registered new interface driver cdc_subset
+[    3.376072] usbcore: registered new interface driver zaurus
+[    3.381710] usbcore: registered new interface driver cdc_ncm
+[    3.387356] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.393886] ehci-pci: EHCI PCI platform driver
+[    3.398348] ehci-platform: EHCI generic platform driver
+[    3.403822] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    3.410513] st-pinctrl pin-controller-vsafe.1: maps: function usb2_1_1 group usb2_1_1-0 num 3
+[    3.419221] st-hcd 16203c00.usb: 48MHz ohci clk not found
+[    3.424640] st-hcd 16203c00.usb: power reset control not found
+[    3.430571] sti-usb2-xphy 16200084.usb2xphy: USBxSS XPHY POWER ON
+[    3.436655] sti-usb2-xphy 16200084.usb2xphy: USB2SS XPHY configuration
+[    3.443324] ehci-platform ehci-platform.0: EHCI Host Controller
+[    3.449267] ehci-platform ehci-platform.0: new USB bus registered, assigned bus number 1
+[    3.457801] ehci-platform ehci-platform.0: irq 209, io mem 0x16203e00
+[    3.479272] ehci-platform ehci-platform.0: USB 2.0 started, EHCI 1.00
+[    3.486190] hub 1-0:1.0: USB hub found
+[    3.489957] hub 1-0:1.0: 1 port detected
+[    3.494158] ohci-platform ohci-platform.0: Generic Platform OHCI Controller
+[    3.501148] ohci-platform ohci-platform.0: new USB bus registered, assigned bus number 2
+[    3.509274] ohci-platform ohci-platform.0: irq 210, io mem 0x16203c00
+[    3.570319] hub 2-0:1.0: USB hub found
+[    3.574068] hub 2-0:1.0: 1 port detected
+[    3.578196] st-hcd 16203c00.usb: IBI structure retrieved
+[    3.583516] st-hcd 16203c00.usb: IBI configuration default retrieved
+[    3.590263] usbcore: registered new interface driver usb-storage
+[    3.596581] sti-usb3-phy 16140000.usb3_phy: USB3 MiPHY Ref clk 25 MHz enabled
+[    3.603734] sti-usb3-phy 16140000.usb3_phy: MiPHY2 USB3 reset is missing...
+[    3.610762] sti-usb3-phy 16140000.usb3_phy: usb3 ioaddr 0xbe9ba000, pipew ioaddr 0xbe9bc000
+[    3.619236] sti-usb3-phy 16140000.usb3_phy: USB3 MiPHY2 probed
+[    3.625752] st-pinctrl pin-controller-vsafe.1: maps: function usb3_0_1 group usb3_0_1-0 num 3
+[    3.634422] usb-st-dwc3 16100000.dwc3: glue-logic addr 0xbe9e2000
+[    3.640548] usb-st-dwc3 16100000.dwc3: syscfg-reg offset 0x0
+[    3.646202] usb-st-dwc3 16100000.dwc3: configured as host DRD
+[    3.652784] sti-usb2-xphy 16100048.usb2xphy: USBxSS XPHY POWER ON
+[    3.658876] sti-usb2-xphy 16100048.usb2xphy: USB3SS XPHY configuration
+[    3.732203] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    3.737693] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 3
+[    3.746265] xhci-hcd xhci-hcd.0.auto: irq 198, io mem 0x16000000
+[    3.752743] hub 3-0:1.0: USB hub found
+[    3.756492] hub 3-0:1.0: 1 port detected
+[    3.760574] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    3.766057] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 4
+[    3.774091] hub 4-0:1.0: USB hub found
+[    3.777836] hub 4-0:1.0: 1 port detected
+[    3.781945] usb-st-dwc3 16100000.dwc3: probe exits fine...
+[    3.788511] i2c /dev entries driver
+[    3.792179] st-pinctrl pin-controller-front1.2: maps: function i2c1 group i2c1_alt1-0 num 3
+[    3.801120] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p1_par@0
+[    3.809398] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p2_par@0
+[    3.817653] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p3_par@0
+[    3.825922] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p4_par@0
+[    3.834189] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p1@0
+[    3.842108] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p2@0
+[    3.850027] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p3@0
+[    3.857935] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/demod_mxl541p4@0
+[    3.866875] i2c i2c-1: of_i2c: modalias failure on /soc/i2c1@08941000/tuner_6111@0
+[    3.874458] st-i2c 8941000.i2c1: ST I2C(0x1) initialized
+[    3.879872] st-pinctrl pin-controller-front1.2: maps: function i2c3 group i2c3_alt1-0 num 3
+[    3.888847] st-i2c 8943000.i2c3: ST I2C(0x3) initialized
+[    3.894220] st-pinctrl pin-controller-rear0.4: maps: function i2c5 group i2c5_alt1-0 num 3
+[    3.903939] at24 5-0050: 32768 byte 24c256 EEPROM, writable, 64 bytes/write
+[    3.910923] st-i2c 8a40000.i2c5: ST I2C(0x5) initialized
+[    3.918868] st_thermal a900000.temp0: passive cooling disabled
+[    3.924920] st_thermal a900000.temp0: STMicroelectronics thermal sensor initialised
+[    3.934035] st_thermal 8e40000.a9temp: passive cooling disabled
+[    3.940102] st_thermal 8e40000.a9temp: STMicroelectronics thermal sensor initialised
+[    3.948739] st-lpc-wdt 8e50000.lpc_wdt: LPC Watchdog driver registered, reset type is cold
+[    3.957401] sdhci: Secure Digital Host Controller Interface driver
+[    3.963584] sdhci: Copyright(c) Pierre Ossman
+[    3.967927] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.973753] st-pinctrl pin-controller-front0.3: maps: function mmc1 group sd-0 num 11
+[    3.982100] mmc0: no vqmmc regulator found
+[    3.986188] mmc0: no vmmc regulator found
+[    4.029275] mmc0: SDHCI controller on 1e600000.sdhci [1e600000.sdhci] using ADMA
+[    4.037581] usbcore: registered new interface driver usbhid
+[    4.043168] usbhid: USB HID core driver
+[    4.047320] sti_cpufreq sti_cpufreq_init.53: could not find regmap phandle
+[    4.054217] sti_cpufreq sti_cpufreq_init.53: DVFS disabled
+[    4.059754] sti_cpufreq: probe of sti_cpufreq_init.53 failed with error -61
+[    4.149273] sti-boardinfo boardinfo.63: read error -110
+[    4.154499] sti-boardinfo: probe of boardinfo.63 failed with error -110
+[    4.161556] st-rproc st231-gp0.57: st231 pwr_reset not present
+[    4.167511] st-rproc st231-gp0.57: assigned reserved memory node gp0-reserved
+[    4.174770]  st231-gp0.57#vring: assigned reserved memory node gp0_vring
+[    4.181549]  st231-gp0.57#buffer: assigned reserved memory node gp0_buffer
+[    4.188455]  remoteproc0: st231-gp0 is available
+[    4.193079]  remoteproc0: Note: remoteproc is still under development and considered experimental.
+[    4.202038]  remoteproc0: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[    4.217302] st-rproc st231-gp0.57: Elf file with a resource table
+[    4.223749] st-rproc st231-gp1.58: st231 pwr_reset not present
+[    4.223927]  remoteproc0: powering up st231-gp0
+[    4.223938]  remoteproc0: Booting fw image rproc-st231-gp0-fw, size 1631157
+[    4.223944] st-rproc st231-gp0.57: Elf file with a resource table
+[    4.223957] st-rproc st231-gp0.57: Subdevice child dma coherent memory rproc not found
+[    4.234548] st-rproc st231-gp0.57: rproc-st231-gp0-fw: ELF non-secure firmware format detected
+[    4.264074] st-rproc st231-gp1.58: assigned reserved memory node gp1-reserved
+[    4.264112]  remoteproc0: started from 0x81400300.
+[    4.264116]  remoteproc0: remote processor st231-gp0 is now up
+[    4.265608] virtio_rpmsg_bus virtio0: rpmsg host is online
+[    4.265624]  remoteproc0: registered virtio0 (type 7)
+[    4.292438] virtio_rpmsg_bus virtio0: creating channel rpmsg-client-sample addr 0x0
+[    4.292500]  st231-gp1.58#vring: assigned reserved memory node gp1_vring
+[    4.292588]  st231-gp1.58#buffer: assigned reserved memory node gp1_buffer
+[    4.292636]  remoteproc1: st231-gp1 is available
+[    4.292639]  remoteproc1: Note: remoteproc is still under development and considered experimental.
+[    4.292642]  remoteproc1: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[    4.297558] st-rproc st231-gp1.58: Elf file with a resource table
+[    4.297909]  remoteproc1: powering up st231-gp1
+[    4.297921]  remoteproc1: Booting fw image rproc-st231-gp1-fw, size 1631449
+[    4.297926] st-rproc st231-gp1.58: Elf file with a resource table
+[    4.297938] st-rproc st231-gp1.58: Subdevice child dma coherent memory rproc not found
+[    4.308672] st-rproc st231-gp2.59: st231 pwr_reset not present
+[    4.308876] st-rproc st231-gp2.59: assigned reserved memory node gp2-reserved
+[    4.308981]  st231-gp2.59#vring: assigned reserved memory node gp2_vring
+[    4.309057]  st231-gp2.59#buffer: assigned reserved memory node gp2_buffer
+[    4.309108]  remoteproc2: st231-gp2 is available
+[    4.309111]  remoteproc2: Note: remoteproc is still under development and considered experimental.
+[    4.309114]  remoteproc2: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[    4.309432] st-rproc st231-gp3.60: assigned reserved memory node gp3-reserved
+[    4.309504]  st231-gp3.60#vring: assigned reserved memory node gp3_vring
+[    4.309571]  st231-gp3.60#buffer: assigned reserved memory node gp3_buffer
+[    4.309598] st-rproc st231-gp3.60: Failed to get config from node 82927de8
+[    4.309603] st-rproc st231-gp3.60: of_ibi_state_parse_all FAILED in parsing nstates = 0
+[    4.309642]  remoteproc3: st231-gp3 is available
+[    4.309644]  remoteproc3: Note: remoteproc is still under development and considered experimental.
+[    4.309647]  remoteproc3: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[    4.310999] ST_DDR CNTRL driver registered
+[    4.311404] st-rproc st231-gp1.58: rproc-st231-gp1-fw: ELF non-secure firmware format detected
+[    4.317632] st-rproc st231-gp2.59: Elf file with a resource table
+[    4.317979]  remoteproc2: powering up st231-gp2
+[    4.317990]  remoteproc2: Booting fw image rproc-st231-gp2-fw, size 1640076
+[    4.317995] st-rproc st231-gp2.59: Elf file with a resource table
+[    4.318007] st-rproc st231-gp2.59: Subdevice child dma coherent memory rproc not found
+[    4.328713] st-rproc st231-gp2.59: rproc-st231-gp2-fw: ELF non-secure firmware format detected
+[    4.334847] st-rproc st231-gp3.60: Elf file with a resource table
+[    4.335202]  remoteproc3: powering up st231-gp3
+[    4.335213]  remoteproc3: Booting fw image rproc-st231-gp3-fw, size 1631064
+[    4.335219] st-rproc st231-gp3.60: Elf file with a resource table
+[    4.335232] st-rproc st231-gp3.60: Subdevice child dma coherent memory rproc not found
+[    4.345787] st-rproc st231-gp3.60: rproc-st231-gp3-fw: ELF non-secure firmware format detected
+[    4.347200]  remoteproc1: started from 0x80c00300.
+[    4.347206]  remoteproc1: remote processor st231-gp1 is now up
+[    4.348766] virtio_rpmsg_bus virtio1: rpmsg host is online
+[    4.348782]  remoteproc1: registered virtio1 (type 7)
+[    4.349435]  remoteproc2: started from 0x80200300.
+[    4.349439]  remoteproc2: remote processor st231-gp2 is now up
+[    4.350917] virtio_rpmsg_bus virtio2: rpmsg host is online
+[    4.350928]  remoteproc2: registered virtio2 (type 7)
+[    4.351194]  remoteproc3: failed to request mbox chan 0
+[    4.351198]  remoteproc3: can't start rproc st231-gp3: -16
+[    4.351233]  remoteproc3: rproc_boot() failed -16
+[    4.351262] virtio_rpmsg_bus: probe of virtio3 failed with error -16
+[    4.351269]  remoteproc3: registered virtio3 (type 7)
+[    4.640903] virtio_rpmsg_bus virtio1: creating channel rpmsg-client-sample addr 0x0
+[    4.641585] st-lpm driver registered
+[    4.642285] st-lpm a000000.stm-lpm: SBC Fw lpm-fw-STiH390.elf Found, Loading ...
+[    4.659670] virtio_rpmsg_bus virtio2: creating channel rpmsg-client-sample addr 0x0
+[    4.670122] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+[    4.676586] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+[    4.693411] st-lpm a000000.stm-lpm: SBC Fw lpm-fw-STiH390.elf loaded.
+[    4.699895] st-lpm a000000.stm-lpm: Booting SBC Firmware...
+[    4.699899] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    4.702545] nf_conntrack version 0.5.0 (15174 buckets, 60696 max)
+[    4.703040] ipip: IPv4 over IPv4 tunneling driver
+[    4.703705] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    4.703791] TCP: cubic registered
+[    4.704175] NET: Registered protocol family 10
+[    4.704704] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    4.704820] sit: IPv6 over IPv4 tunneling driver
+[    4.705214] NET: Registered protocol family 17
+[    4.705306] Bridge firewalling registered
+[    4.705313] Ebtables v2.0 registered
+[    4.705318] NET: Registered protocol family 41
+[    4.762420] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    4.770126] Registering SWP/SWPB emulation handler
+[    4.775326] cpu cpu0: opp_init_cpufreq_table: Device OPP not found (-19)
+[    4.782034] cpufreq_cpu0: failed to init cpufreq table: -19
+LPM: RELEASE Version M4_0.2.2
+LPM: FWLPM_Init started
+LPM: Finished FWLPM Init
+[    4.838749] mmc0: new high speed SDHC card at address 0001
+[    4.844630] mmcblk0: mmc0:0001 ASTC 14.5 GiB 
+[    4.850248]  mmcblk0: p1
+[    4.869171] st-lpm a000000.stm-lpm: LPM: firmware ver 2.0.3
+[    4.874770] st-lpm a000000.stm-lpm: (30-11-2016)
+LPM: Set Features in SBC FW
+LPM: Exit CPS value received
+[    4.923239] st-lpm a000000.stm-lpm: SBC Fw booted.
+[    4.971173] rtc-st-sbc rtc_sbc.97: rtc core: registered rtc-st-sbc as rtc0
+[    5.002289] rtc-st-sbc rtc_sbc.97: Setting system clock to 1999-11-30 00:00:00 UTC
+[    5.412370] MTT: registering output driver dfs
+[    5.416810] MTT: multicore-trace initialized.
+[    5.421668] regulator-dummy: disabling
+[    5.425948] sti-mailbox e600000.mailbox: Mbox (1) st231_gp_3: 2 channel registered
+[    5.433812] st-pinctrl pin-controller-rear0.4: maps: function eth0_led group eth0_led_alt1-0 num 3
+[    5.529294] stmmaceth 16900000.dwmac: phy-addr property limits bus scan to this addr
+[    5.552311] stmmac - user ID: 0x10, Synopsys ID: 0x41
+[    5.557354]  DMA HW capability register supported
+[    5.561893]  RX Checksum Offload Engine supported
+[    5.566753]  TX Checksum insertion supported
+[    5.571020]  Wake-Up On Lan supported
+[    5.574695]  TSO supported
+[    5.577389]  TSO feature enabled
+[    5.580615]  Enable RX Mitigation via HW Watchdog Timer
+[    5.590217] libphy: stmmac: probed
+[    5.593616] eth0: PHY ID 00061cd0 at 2 IRQ POLL (stmmac-0:02) active
+[    5.600575] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+[    5.607036] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+[    5.614198] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    5.621848] input: gpio_keys.62 as /devices/soc.0/gpio_keys.62/input/input0
+[    5.628987] sti: -> device gpio_keys.62 as wakeup enabled
+[    5.634861] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+[    5.641518] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+[    5.648652] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    5.664668] rtc-st-sbc rtc_sbc.97: setting system clock to 1999-11-30 00:00:00 UTC (943920000)
+[    5.673850] Reboot cause: Cold-Boot
+[    5.682895] ALSA device list:
+[    5.685859]   #0: aloop 0
+[    5.720161] Freeing unused kernel memory: 23012K (8090f000 - 81f88000)
+[    5.747598] devpts: called with bogus options
+Starting logging: OK
+Starting DHCP client on eth0
+Initializing random number generator... [    5.837785] eth0: device MAC address 0e:49:cd:61:23:1b
+[    5.843815] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+[    5.851078] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+done.
+[    5.858667] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    5.870149] dwmac4: Master AXI performs any burst length
+Starting network: [    5.876063] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+OK
+Starting dropbear sshd: OK
+Loading lsdac module: [    5.949790] probing lsdac ...
+[    5.952754] received lsdac-io 14720000 
+[    5.956575] received dac-io 15130000 
+[    5.960263] received clock with name lsdac_pcm with frequency 2048000 
+[    5.967208] probing done for lsdac ...
+[    5.971503] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+[    5.977965] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+[    5.985374] Loading ...  lsdac module by modprobe (pid 145) 
+[    5.991181] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    5.991344] Loaded lsdac module by modprobe (pid 145)available
+OK
+Creating /dev/lsdac/lsdac0: OK
+Loading iq_streamer module: [    6.024242] >iqs_probe
+[    6.032746] iqs_driver_init: drv_mode=1 max_cmds=400 def_filter=0 iq_idle_val=0x7fc07fc0 thread_policy=1 thread_prio=99
+[    6.044049] <iqs_probe
+[    6.047041] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+OK
+[    6.053889] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+Loading lnb (lnbh26) module: [    6.061384] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    6.065547] Loading os wrapper module...
+[    6.069151] Loading module stm_fe ...
+[    6.069685] st-pinctrl pin-controller-front1.2: maps: function tsin2 group tsin2_parallel num 12
+[    6.069932] stm_demod_get_pdata: No res for sysconf ts pio map
+[    6.070060] stm_fe_demod_probe: Configuring demod stm_fe_demod.0
+[    6.070594] stm_fe_lnb_probe: Configuring lnb stm_fe_lnb.0
+[    6.070895] stm_fe_diseqc_probe: Config diseqc stm_fe_diseqc.0
+[    6.071177] stm_fe_init: pltf driver register failed for ip & demod
+[    6.072270] Loading stmfe utility module ...
+[    6.072952] stm_fe_lnbh26:Loading lnh26 driver module...
+[    6.073016] lnbh26_probe: Loading lnbh26 driver module...
+[    6.103237] Loading stv6111 tuner module ...
+[    6.124619] Loading sat tuner wrapper module ...
+[    6.127231] Loading stid337 platform driver module...
+[    6.128700] Loading diseqc_stid337 platform driver module...
+OK
+Loading tuner (stv6111) module: OK
+Loading demod (stid337) module: OK
+Load[    6.151729] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+[    6.156933] c8sectpfe 22000000.c8sectpfe: Enabled fe system clock 
+[    6.156983] c8sectpfe 22000000.c8sectpfe: Enabled frc0 clock 
+[    6.157042] c8sectpfe 22000000.c8sectpfe: Enabled frc1 clock 
+[    6.157046] c8sectpfe 22000000.c8sectpfe: Enabled all fe clocks 
+[    6.164426] c8sectpfe 22000000.c8sectpfe: C8SECTPFE hw supports the following:
+[    6.164430] c8sectpfe 22000000.c8sectpfe: Input Blocks: 5
+[    6.164434] c8sectpfe 22000000.c8sectpfe: Merged Input Blocks: 1
+[    6.164438] c8sectpfe 22000000.c8sectpfe: Software Transport Stream Inputs: 8
+[    6.164441] c8sectpfe 22000000.c8sectpfe: Transport Stream Output: 2
+[    6.164445] c8sectpfe 22000000.c8sectpfe: Cable Card Convertor: 1
+[    6.164448] c8sectpfe 22000000.c8sectpfe: RAMs supported by C8SECTPFE: 2
+[    6.164452] c8sectpfe 22000000.c8sectpfe: Tango TPs supported by C8SECTPFE: 1
+[    6.164576] c8sectpfe 22000000.c8sectpfe: Loading firmware: pti_memdma_h337.elf
+[    6.164584] c8sectpfe 22000000.c8sectpfe: Loading IMEM segment 0 0x00000000
+[    6.164584] 	 (0x39f bytes) -> 0xbf344000 (0x4d4 bytes)
+[    6.164705] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 1 0x00000010
+[    6.164705] 	(0x14 bytes) -> 0xbf348040 (0x14 bytes)
+[    6.164710] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 2 0x00000020
+[    6.164710] 	(0x34 bytes) -> 0xbf348080 (0x34 bytes)
+[    6.164716] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 3 0x0000002d
+[    6.164716] 	(0x0 bytes) -> 0xbf3480b4 (0xc0 bytes)
+[    6.164724] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 4 0x00000000
+[    6.164724] 	(0x18 bytes) -> 0xbf348000 (0x18 bytes)
+[    6.164730] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 5 0x000000a0
+[    6.164730] 	(0x1a0 bytes) -> 0xbf348280 (0x1a0 bytes)
+[    6.164742] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 6 0x00000080
+[    6.164742] 	(0x34 bytes) -> 0xbf348200 (0x34 bytes)
+[    6.164748] c8sectpfe 22000000.c8sectpfe: Loading DMEM segment 7 0x00000160
+[    6.164748] 	(0x200 bytes) -> 0xbf348580 (0x200 bytes)
+[    6.164825] c8sectpfe 22000000.c8sectpfe: No i2c-bus found
+[    6.164833] c8sectpfe 22000000.c8sectpfe: channel=ba5a4250 n=0 tsin_num=0, invert-ts-clk=0
+[    6.164833] 	serial-not-parallel=0 pkt-clk-valid=0 dvb-card=8 tag_data =0 stfe_mode=0
+[    6.164839] c8sectpfe 22000000.c8sectpfe: configure_input_block:1013 Configuring channel=ba5a4250 tsin=0
+[    6.180413] DVB: registering new adapter (STi c8sectpfe)
+[    6.181567] c8sectpfe 22000000.c8sectpfe: DVB frontend card STV0910_6120_LNB26_NIMA successfully attached
+[    6.181575] c8sectpfe 22000000.c8sectpfe: DVB: registering adapter 0 frontend 0 ()...
+[    6.181665] stm_fe_discover: Discovered stm_fe_demod.0
+[    6.181670] stm_fe_discover: Discovered stm_fe_lnb.0 ...
+[    6.181674] stm_fe_discover: Discovered stm_fe_diseqc.0 ...
+[    6.181681] c8sectpfe 22000000.c8sectpfe: Discovered 3 STM_FE objects
+ing demux (c8sectpfe) module: [    6.418792] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+[    6.428496] stid337 c000000.demod_stid337: L2A revision _L2A-LLA_REL_0.6-April_2017, MID:0x10, DID:0x50_ initialized
+[    6.428746] platform sound.96: Driver snd-soc-sti requests probe deferral
+[    6.446752] demod_suspend: STM_FE demod suspending in low power mode...
+[    6.453778] c8sectpfe 22000000.c8sectpfe: Created stm_fe_demod.0       for parent stm_fe_demod.0      
+[    6.467121] stm_fe_lnb_suspend: obj stm_fe_lnb.0 suspending in low power mode
+[    6.474460] c8sectpfe 22000000.c8sectpfe: Created stm_fe_lnb.0         for parent stm_fe_demod.0      
+[    6.483810] stm_fe_diseqc_suspend: diseqc suspending in low power mode
+[    6.490459] c8sectpfe 22000000.c8sectpfe: Created stm_fe_diseqc.0      for parent stm_fe_demod.0      
+[    6.499790] c8sectpfe 22000000.c8sectpfe: Boot the memdma SLIM core
+[    6.506728] snd-soc-sti sound.96: ASoC: CPU DAI (null) not registered
+OK
+[    6.513480] snd-soc-sti sound.96: Error: snd_soc_register_card failed (-517)!
+[    6.521393] platform sound.96: Driver snd-soc-sti requests probe deferral
+
+Welcome to Starkl OS
+board login: root
+Password: 
+root@board:~$ 
+
