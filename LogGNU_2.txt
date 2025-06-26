@@ -1,0 +1,178 @@
+launchers/stmc2-b2232/launch-starkl  outputs/starkl-b2232-minimal/buildroot/images/ 192.168.1.1 
+proot warning: can't sanitize binding "./vmlinux": No such file or directory
+GNU gdb (GDB) STMicroelectronics/Linux Base 7.6-78 [build Mar 19 2015]
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "--host=i686-pc-linux-gnu --target=arm-cortex-linux-gnueabi".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+The target is assumed to be little endian
+
+***
+*** 'b2232stxd337' NG targetpack v14 starting
+***
+
+TS parameters:  {'profile': 'd337', 'smp_mode': '1', 'debugram_size': '32768', 'no_vcxo': '1', 'active_cores': 'a9_0:dbu_sbc', 'debugram_base': '0x87FF8000'}
+TCK frequency set to 15000000 Hz
+coreName = a9_0
+autodetect_chain() td_from: 000000010000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+Main TMC devid 0x1d45e041
+Complete TMC chain devid 0x1d45e041
+autodetect_chain() td_from: 111111110010011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+autodetect_chain() td_from: 111111110010011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  DBU dbu_sa id = 0x18400d03
+  DBU dbu_sbc id = 0x20103d03
+
+Performing pre pokes ...
+
+Chip infos ...
+  Device ID = 0x1D45E041 ==> STiD337 cut 2.x
+  Mode-pins = 0x1f6
+      [0] Boot master : 0 => CA9MP2
+    [6:2] Boot device : 0x1d => MMC (v4.4/4.5) - 8 bit - freq=bootfreq/2
+      [7] Auto-start  : Enabled
+
+Boot firmware main params
+  C0 clocks: No VCXO (disabled or not present) => unrealistic use-case
+  Clocks profile: d337
+  A9 frequency: 1200 Mhz
+  DDR: 1866 Mbps
+  DDR PLL: CP forced to 6
+  SFC config: ['clk_div2', 'spi_4x', 'N25Q256']
+  UART id: 0
+Generating parameters file ...
+  Params file = /opt/STM/STLinux-2.4/host/stmc/targetpack/boards_ng/b2232stxd337/btfmw_params-b2232stxd337rev1.bin
+  DDR: 3 parameter(s)
+    p[0]: name=60002, v16=0x0088, v32=0x0000f3cf
+    p[1]: name=60002, v16=0x0082, v32=0x0001e000
+    p[2]: name=3006, v16=0x0000, v32=0x00000000
+Loading firmware ...
+  File     : /opt/STM/STLinux-2.4/host/stmc/targetpack/boards_ng/b2232stxd337/btfmw-d337.out 
+  Format   : 32bit
+  Endian   : little
+  Start    : 0x6040148
+  Loading section: size 0x18 @ 0x6040000
+  Loading section: size 0xe29c @ 0x6040018
+  Loading section: size 0x18 @ 0x604e2b4
+  Loading section: size 0xcac @ 0x604e2cc
+  Loading section: size 0x8 @ 0x604ef78
+  Loading section: size 0x4 @ 0x604ef80
+  Loading section: size 0x8 @ 0x6056f84
+  Loading section: size 0x4 @ 0x6056f8c
+  Loading section: size 0x4 @ 0x6056f90
+  Loading section: size 0x448 @ 0x6056f98
+  Loading section: size 0x1c @ 0x60573e0
+Loading firmware parameters @ 0x606e000 ...
+  File : /opt/STM/STLinux-2.4/host/stmc/targetpack/boards_ng/b2232stxd337/btfmw_params-b2232stxd337rev1.bin 
+  Size : 892 bytes 
+Executing firmware
+  Waiting for firmware started ... ok
+  Initializing ... ok
+  Configuring avs ... ok
+  Configuring clocks ... ok
+  Configuring sfc ... ok
+  Configuring ddr ... ok
+  Configuring interco ... ok
+  Shutting down firmware ... ok
+
+  Clockgen A0
+    PLL0                = 932999992 Hz (SSCG ENABLED)
+    CLK_ICN_LMI         = 466499996 Hz
+  Clockgen C0
+    PLL0                = 1475000000/1475000000/245833333/122916666 Hz 
+    PLL1                = 1512000147/1512000147/1512000147/1512000147 Hz 
+    FS660 VCO           = 575000000 Hz
+      CH0               = 575000000 Hz
+      CH1               = 500000165 Hz
+      CH2               = 333000037 Hz
+      CH3               = 108000005 Hz
+    CLK_SLIM_CC         = 200000000 Hz
+    CLK_SPI             = 100000033 Hz
+    CLK_FLASH           = 200000000 Hz
+    CLK_MMC_0           = 200000000 Hz
+    CLK_PERIPH_TS       = 200000000 Hz
+    CLK_EXT2F_A9        = 200000000 Hz
+    CLK_ICN_TS          = 333000037 Hz
+    CLK_NAND            = 200000000 Hz
+    CLK_MMC_1           = OFF/200000000 Hz
+    CLK_ST231_GP_2      = OFF/575000000 Hz
+    CLK_ST231_GP_3      = OFF/575000000 Hz
+    CLK_ST231_GP_0      = OFF/575000000 Hz
+    CLK_ST231_GP_1      = OFF/575000000 Hz
+    CLK_ETH_GMAC        = OFF/125000041 Hz
+    CLK_GMAC_PHYCLK     = OFF/125000041 Hz
+    CLK_RCS_RECOVERED_0 = 30729166 Hz
+    CLK_RCS_RECOVERED_1 = 27000002 Hz
+    CLK_STBE            = 400000000 Hz
+    CLK_TIMER_A9        = OFF/100000033 Hz
+    CLK_TSOUT_0         = OFF/108000005 Hz
+    CLK_TSOUT_1         = OFF/108000005 Hz
+    CLK_RX_ICN_L0L1     = 575000000 Hz
+    CLK_FRC_1           = OFF/27000001 Hz
+    CLK_FRC_1_PAD       = OFF/27000001 Hz
+    CLK_PWM_REAR        = 100000033 Hz
+    CLK_TX_ICN_L0L1     = 500000165 Hz
+    CLK_SPARE_CLK_OUT   = OFF/100000033 Hz
+    CLK_SYSTEM_STFE     = OFF/250000082 Hz
+    CLK_SLIM_FDMA_1     = OFF/400000000 Hz
+    CLK_ATB             = OFF/200000000 Hz
+    CLK_TRACE           = OFF/200000000 Hz
+    CLK_LPC             = OFF/100000033 Hz
+    CLK_ICN_DISP        = 333000037 Hz
+    CLK_ICN_CPU         = 333000037 Hz
+    CLK_PWM_FRONT       = 100000033 Hz
+    CLK_SLIM_FDMA_0     = OFF/400000000 Hz
+    CLK_PERIPH_DISP     = 200000000 Hz
+    CLK_PERIPH_CPU      = 200000000 Hz
+  Clockgen D0
+    FS660 VCO           = OFF/500000000 Hz
+      CH0               = OFF/494999848 Hz
+      CH1               = OFF/247499924 Hz
+      CH2               = OFF/83333333 Hz
+      CH3               = OFF/83333333 Hz
+    CLK_PCM_2           = OFF/25000000 Hz
+    CLK_PROC_IQDP       = OFF/25000000 Hz
+    CLK_TO_CLKGENC_SRC0 = OFF/25000000 Hz
+  Clockgen D1
+    FS660 VCO           = 575000000 Hz
+      CH0               = OFF/569249826 Hz
+      CH1               = OFF/284624913 Hz
+      CH2               = OFF/95833333 Hz
+      CH3               = 400000000 Hz
+    CLK_PIX_HDDAC       = 30729166 Hz
+    CLK_HDDAC           = 30729166 Hz
+    CLK_PROC_IQDP       = 400000000 Hz
+    CLK_FRC_0           = 27000002 Hz
+    CLK_FRC_0_PAD       = 27000002 Hz
+    CLK_FRC_2           = 27000002 Hz
+    CLK_TO_CLKGENC_SRC1 = 400000000 Hz
+  Clockgen A9
+    CA9                 = 1200000000 Hz (src=CA9 PLL)
+
+AVS info (Theorical values are correct only if AN recommendation are followed):
+ - Process code CORE: 7
+   -> PWM0 CORE value: 159 (992 mV)
+ - Process code CPU: 0
+   -> PWM3 CPU value: 128 (1061 mV)
+
+Performing post pokes ...
+autodetect_chain() td_from: 111111110001001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+
+***
+*** 'b2232stxd337' NG targetpack v14 completed
+***
+
+[Switching to Thread 1]
+0x00000000 in ?? ()
+Restoring binary file u-boot.bin into memory (0xbf600000 to 0xbf64c634)
+[New Thread 2]
+
+Thread 2 (Thread 2):
+
+Thread 1 (Thread 1):
+[Switching to thread 1 (Thread 1)]
+#1  0x00000000 in ?? ()
+
